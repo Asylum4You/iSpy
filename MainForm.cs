@@ -47,7 +47,7 @@ namespace iSpyApplication
         public const string VLCx64 = "https://download.videolan.org/pub/videolan/vlc/last/win64/";
 
         public const string Website = "https://www.ispyconnect.com";
-        public const string ContentSource = "https://ispyrtcdata.blob.core.windows.net/downloads/";
+        public const string ContentSource = "https://files.ispyconnect.com/downloads/";
         public static bool NeedsSync;
         private static DateTime _needsMediaRefresh = DateTime.MinValue;
         //private static Player _player = null;

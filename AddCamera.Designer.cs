@@ -213,6 +213,7 @@ namespace iSpyApplication
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
@@ -231,6 +232,8 @@ namespace iSpyApplication
             this.tbSaveQuality = new System.Windows.Forms.TrackBar();
             this.label101 = new System.Windows.Forms.Label();
             this.numSaveCounter = new System.Windows.Forms.NumericUpDown();
+            this.numMotionTimeout = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbLocal = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label56 = new System.Windows.Forms.Label();
@@ -342,9 +345,6 @@ namespace iSpyApplication
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.numMotionTimeout = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
             this.tcCamera.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -414,6 +414,7 @@ namespace iSpyApplication
             ((System.ComponentModel.ISupportInitialize)(this.numSaveInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSaveQuality)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaveCounter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMotionTimeout)).BeginInit();
             this.gbLocal.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel29.SuspendLayout();
@@ -452,7 +453,6 @@ namespace iSpyApplication
             this.panel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMotionTimeout)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSelectSource
@@ -2810,6 +2810,16 @@ namespace iSpyApplication
             this.tableLayoutPanel24.Size = new System.Drawing.Size(643, 248);
             this.tableLayoutPanel24.TabIndex = 0;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 205);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 8, 6, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 13);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Motion Timeout";
+            // 
             // label95
             // 
             this.label95.AutoSize = true;
@@ -3027,6 +3037,35 @@ namespace iSpyApplication
             this.numSaveCounter.Name = "numSaveCounter";
             this.numSaveCounter.Size = new System.Drawing.Size(63, 20);
             this.numSaveCounter.TabIndex = 38;
+            // 
+            // numMotionTimeout
+            // 
+            this.numMotionTimeout.Location = new System.Drawing.Point(98, 203);
+            this.numMotionTimeout.Margin = new System.Windows.Forms.Padding(6);
+            this.numMotionTimeout.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.numMotionTimeout.Name = "numMotionTimeout";
+            this.numMotionTimeout.Size = new System.Drawing.Size(63, 20);
+            this.numMotionTimeout.TabIndex = 41;
+            this.numMotionTimeout.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.tableLayoutPanel24.SetColumnSpan(this.label8, 2);
+            this.label8.Location = new System.Drawing.Point(284, 205);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 8, 6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(249, 13);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Keep saving images after motion detection stops (s)";
             // 
             // gbLocal
             // 
@@ -4348,45 +4387,6 @@ namespace iSpyApplication
             this.linkLabel4.Text = "Copy To...";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.tableLayoutPanel24.SetColumnSpan(this.label8, 2);
-            this.label8.Location = new System.Drawing.Point(284, 205);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 8, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(249, 13);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Keep saving images after motion detection stops (s)";
-            // 
-            // numMotionTimeout
-            // 
-            this.numMotionTimeout.Location = new System.Drawing.Point(98, 203);
-            this.numMotionTimeout.Margin = new System.Windows.Forms.Padding(6);
-            this.numMotionTimeout.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.numMotionTimeout.Name = "numMotionTimeout";
-            this.numMotionTimeout.Size = new System.Drawing.Size(63, 20);
-            this.numMotionTimeout.TabIndex = 41;
-            this.numMotionTimeout.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 205);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 8, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 13);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Motion Timeout";
-            // 
             // AddCamera
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4506,6 +4506,7 @@ namespace iSpyApplication
             ((System.ComponentModel.ISupportInitialize)(this.numSaveInterval)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSaveQuality)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaveCounter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMotionTimeout)).EndInit();
             this.gbLocal.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -4561,7 +4562,6 @@ namespace iSpyApplication
             this.tableLayoutPanel4.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMotionTimeout)).EndInit();
             this.ResumeLayout(false);
 
         }
